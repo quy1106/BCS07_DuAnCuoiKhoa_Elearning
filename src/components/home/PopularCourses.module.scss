@@ -153,10 +153,27 @@
     &:hover{
         padding-top: 27px;
     }
-
-    @media screen and (max-width: 821.98px) {
-        padding: 20px 15px;
+    @media screen and (max-width: 1440.98px) {
+        
+            .infoItem{
+                display: flex;
+                flex-direction: column;
+                padding: 2px;
+                svg{
+                    font-size: 32px;
+                }
+                span{
+                    font-size: 16px;
+                }
+            }
+            .info{
+                 display: flex;
+                 justify-content: space-around;
+                 gap: 8px;
+            }
     }
+
+    
     @media screen and (max-width: 414.98px) {
         .items{
             
@@ -175,5 +192,21 @@
                 transform: scale(1) translateY(0);
             }
         }
+    }
+    @media screen and (max-width: 320px) {
+        
+                .infoItem{
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 16px;
+                    svg{
+                        font-size: 32px;
+                    }
+                    span{
+                        font-size: 13px;
+                    }
+                
+            }
+        
     }
 }

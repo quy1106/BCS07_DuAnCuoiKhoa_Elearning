@@ -89,7 +89,7 @@
             }
             .textHover{
                 @apply text-gray-500 font-medium my-4;
-                margin-top: 4em;
+                margin-top: 5em;
                 font-size: 16px;
                 text-align: justify;
             }
@@ -110,5 +110,46 @@
         }
     }
     
+}
+@media screen and (max-width: 1440px) {
+        
+    // .contentItem{
+    //     display: flex;
+    //     // flex-direction: column;
+    //     // padding: 2px;
+    //     // svg{
+    //     //     font-size: 32px;
+    //     // }
+    //     // span{
+    //     //     font-size: 16px;
+    //     // }
+    // }
+    .info{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 14px;
+    }
+    .infoItem{
+        display: flex;
+        flex-direction: column;
+         padding: 2px;
+        svg{
+                font-size: 32px;
+            }
+            span{
+                font-size: 16px;
+            }
+    }
+}
+@media screen and (max-width: 320px) {
+    .info{
+        
+        svg{
+                font-size: 32px;
+            }
+            span{
+                font-size: 10px;
+            }
+    }
 }
 
